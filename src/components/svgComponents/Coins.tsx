@@ -1,5 +1,3 @@
-import React from "react";
-
 const Coins = ({ maxWidth = "417px", className = "" }) => {
   return (
     <span style={{ width: "100%", maxWidth: maxWidth }}>

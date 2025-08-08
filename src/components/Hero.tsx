@@ -1,4 +1,3 @@
-import React from "react";
 import Card from "./svgComponents/Card";
 
 const Hero: React.FC = () => {

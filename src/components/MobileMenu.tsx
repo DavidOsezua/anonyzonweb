@@ -1,4 +1,3 @@
-import React from "react";
 import Logo from "./svgComponents/Logo";
 import Close from "./svgComponents/Close";
 
@@ -23,9 +22,8 @@ const MobileMenu: React.FC<{
       <div className="flex flex-col h-full p-6">
         {/* Header with Close Button */}
         <div className="flex items-center justify-between mb-12">
-          <div className="text-white text-xl font-bold">
-            <Logo />
-          </div>
+          <Logo maxWidth="max-w-[88px]" />
+
           <button onClick={onClose} className="text-white text-2xl">
             <Close />
           </button>

@@ -1,4 +1,4 @@
-import React from "react";
+
 import StackedCard from "./svgComponents/StackedCard";
 import Coins from "./svgComponents/Coins";
 

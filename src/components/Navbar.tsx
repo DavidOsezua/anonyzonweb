@@ -21,9 +21,7 @@ const Navbar: React.FC = () => {
             "linear-gradient(90.34deg, rgba(64, 72, 104, 0.2) 0%, rgba(69, 79, 126, 0.2) 100%)",
         }}
       >
-        <div className="flex items-center">
-          <Logo />
-        </div>
+        <Logo maxWidth={`max-w-[88px]  md:max-w-[158px]`} />
 
         {/* Desktop Menu */}
         <div className="hidden lg:flex items-center space-x-8">

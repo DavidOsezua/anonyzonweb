@@ -1,4 +1,3 @@
-import React from "react";
 import PlayStore from "./svgComponents/PlayStore";
 import Apple from "./svgComponents/Apple";
 

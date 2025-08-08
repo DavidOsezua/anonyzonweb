@@ -1,5 +1,3 @@
-
-
 const StackedCard = ({ maxWidth = "422px", className = "" }) => {
   return (
     <span style={{ width: "100%", maxWidth: maxWidth }}>
@@ -26,7 +24,6 @@ const StackedCard = ({ maxWidth = "422px", className = "" }) => {
             height="277.377"
           >
             <div
-              xmlns="http://www.w3.org/1999/xhtml"
               style={{
                 backdropFilter: "blur(2.35px)",
                 clipPath: "url(#bgblur_1_1015_7281_clip_path)",
@@ -144,7 +141,6 @@ const StackedCard = ({ maxWidth = "422px", className = "" }) => {
           />
           <foreignObject x="57.335" y="96.1011" width="319.68" height="173.944">
             <div
-              xmlns="http://www.w3.org/1999/xhtml"
               style={{
                 backdropFilter: "blur(2.35px)",
                 clipPath: "url(#bgblur_1_1015_7281_clip_path)",
@@ -173,7 +169,6 @@ const StackedCard = ({ maxWidth = "422px", className = "" }) => {
             height="173.944"
           >
             <div
-              xmlns="http://www.w3.org/1999/xhtml"
               style={{
                 backdropFilter: "blur(2.35px)",
                 clipPath: "url(#bgblur_1_1015_7281_clip_path)",
@@ -295,7 +290,6 @@ const StackedCard = ({ maxWidth = "422px", className = "" }) => {
             height="277.377"
           >
             <div
-              xmlns="http://www.w3.org/1999/xhtml"
               style={{
                 backdropFilter: "blur(2.35px)",
                 clipPath: "url(#bgblur_1_1015_7281_clip_path)",

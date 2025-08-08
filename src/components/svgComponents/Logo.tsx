@@ -1,14 +1,12 @@
-import React from "react";
-
-const Logo = () => {
+const Logo = ({ maxWidth = "max-w-full" }) => {
   return (
-    <span>
+    <span className={`w-full ${maxWidth}`}>
       <svg
-        width="158"
-        height="31"
         viewBox="0 0 158 31"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
+        className="w-full h-auto"
+        style={{ display: "block" }}
       >
         <rect
           x="7.83057"

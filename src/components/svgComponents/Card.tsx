@@ -1,5 +1,3 @@
-import React from "react";
-
 const Card = ({ maxWidth = "100%", className = "" }) => {
   return (
     <div style={{ width: "100%", maxWidth: maxWidth }}>
@@ -18,7 +16,7 @@ const Card = ({ maxWidth = "100%", className = "" }) => {
             height="486.7"
           >
             <div
-              xmlns="http://www.w3.org/1999/xhtml"
+       
               style={{
                 backdropFilter: "blur(19.31px)",
                 clipPath: "url(#bgblur_1_1015_4516_clip_path)",
