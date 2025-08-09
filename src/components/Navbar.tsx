@@ -2,10 +2,13 @@ import React, { useState } from "react";
 import MobileMenu from "./MobileMenu";
 import Logo from "./svgComponents/Logo";
 import Open from "./svgComponents/Open";
+import { NavLink } from "react-router";
 
 const Navbar: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [sectionId, setSectionId] = useState("");
   const scrollToSection = (section: string) => {
+    setSectionId(section);
     const element = document.getElementById(section);
     element?.scrollIntoView({
       behavior: "smooth",
@@ -21,7 +24,9 @@ const Navbar: React.FC = () => {
             "linear-gradient(90.34deg, rgba(64, 72, 104, 0.2) 0%, rgba(69, 79, 126, 0.2) 100%)",
         }}
       >
-        <Logo maxWidth={`max-w-[88px]  md:max-w-[158px]`} />
+        <NavLink to="/" className={`max-w-[88px]  md:max-w-[158px] w-ful`}>
+          <Logo maxWidth={`max-w-[88px]  md:max-w-[158px]`} />
+        </NavLink>
 
         {/* Desktop Menu */}
         <div className="hidden lg:flex items-center space-x-8">
@@ -37,17 +42,19 @@ const Navbar: React.FC = () => {
           >
             Download App
           </button>
-          <a
-            href="#policy"
+          <NavLink
+            to="/policy"
             className="text-gray-300 hover:text-white transition-colors"
           >
             Policy
-          </a>
+          </NavLink>
         </div>
 
         {/* Desktop CTA Button */}
         <button
-          className="hidden lg:block  text-white px-5 py-3 rounded-lg transition-colors text-sm "
+          className={`hidden lg:block  text-white px-5 py-3 rounded-lg transition-colors text-sm ${
+            sectionId === "download" ? "" : "font-bold"
+          }`}
           style={{
             background: "linear-gradient(to bottom, #57A1FF 0%, #3B69C6 100%)",
           }}

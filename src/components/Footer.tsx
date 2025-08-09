@@ -6,10 +6,10 @@ const Footer: React.FC = () => {
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col items-center space-y-6">
           <div className="flex items-center">
-            <LogoText />
+            <LogoText maxWidth="max-w-[148px] md:max-w-[177px]" />
           </div>
 
-          <div className="flex gap-4 text-center sm:text-left">
+          <div className="flex gap-4 text-center text-[12px] sm:text-left">
             <a
               href="#privacy"
               className="text-gray-400 border-r border-[#FFFFFF] pr-6 hover:text-white transition-colors"
