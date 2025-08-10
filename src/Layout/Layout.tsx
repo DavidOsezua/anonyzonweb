@@ -26,7 +26,7 @@ const Layout = ({ children }: LayoutProps) => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10">
+      <div className="relative z-10 ">
         <Navbar />
         <main className="">{children}</main>
         <Footer />

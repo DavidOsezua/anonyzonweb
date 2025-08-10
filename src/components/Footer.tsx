@@ -1,3 +1,4 @@
+import { NavLink } from "react-router";
 import LogoText from "./svgComponents/LogoText";
 
 const Footer: React.FC = () => {
@@ -10,18 +11,18 @@ const Footer: React.FC = () => {
           </div>
 
           <div className="flex gap-4 text-center text-[12px] sm:text-left">
-            <a
-              href="#privacy"
+            <NavLink
+              to="/privacy"
               className="text-gray-400 border-r border-[#FFFFFF] pr-6 hover:text-white transition-colors"
             >
               Privacy Policy
-            </a>
-            <a
-              href="#terms"
+            </NavLink>
+            <NavLink
+              to="/termsandcondition"
               className="text-gray-400 border-r border-[#FFFFFF] pr-6 hover:text-white transition-colors"
             >
               Terms of Service
-            </a>
+            </NavLink>
             <a
               href="#support"
               className="text-gray-400 hover:text-white transition-colors"

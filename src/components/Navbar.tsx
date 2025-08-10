@@ -1,18 +1,46 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import MobileMenu from "./MobileMenu";
 import Logo from "./svgComponents/Logo";
 import Open from "./svgComponents/Open";
-import { NavLink } from "react-router";
+import { NavLink, useLocation, useNavigate } from "react-router";
 
 const Navbar: React.FC = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
+  const [pendingScroll, setPendingScroll] = useState<string>("");
+
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
   const [sectionId, setSectionId] = useState("");
-  const scrollToSection = (section: string) => {
-    setSectionId(section);
-    const element = document.getElementById(section);
-    element?.scrollIntoView({
-      behavior: "smooth",
-    });
+
+  useEffect(() => {
+    if (pendingScroll && location.pathname === "/") {
+      const timer = setTimeout(() => {
+        const element = document.getElementById(pendingScroll);
+        element?.scrollIntoView({
+          behavior: "smooth",
+        });
+        setPendingScroll("");
+      }, 100);
+
+      return () => clearTimeout(timer);
+    }
+  }, [location.pathname, pendingScroll]);
+
+
+  
+  const scrollToSection = (sectionId: string) => {
+    if (location.pathname === "/") {
+      // Already on homepage, scroll directly
+      const element = document.getElementById(sectionId);
+      element?.scrollIntoView({
+        behavior: "smooth",
+      });
+    } else {
+      // Navigate to homepage first, then scroll
+      setPendingScroll(sectionId);
+      navigate("/");
+    }
   };
 
   return (
@@ -31,13 +59,13 @@ const Navbar: React.FC = () => {
         {/* Desktop Menu */}
         <div className="hidden lg:flex items-center space-x-8">
           <button
-            onClick={() => scrollToSection("features")}
+            onClick={() => scrollToSection("/features")}
             className="text-gray-300 hover:text-white transition-colors"
           >
             Features
           </button>
           <button
-            onClick={() => scrollToSection("download")}
+            onClick={() => scrollToSection("/download")}
             className="text-gray-300 hover:text-white transition-colors"
           >
             Download App
@@ -58,7 +86,7 @@ const Navbar: React.FC = () => {
           style={{
             background: "linear-gradient(to bottom, #57A1FF 0%, #3B69C6 100%)",
           }}
-          onClick={() => scrollToSection("download")}
+          onClick={() => scrollToSection("/download")}
         >
           Download Anonyzon Now
         </button>

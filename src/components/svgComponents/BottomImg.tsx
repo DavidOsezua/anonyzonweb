@@ -3,7 +3,7 @@ const BottomImg = () => {
     <span>
       <svg
         width="100%"
-        height="1908"
+        height="auto"
         viewBox="0 0 465 1908"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"

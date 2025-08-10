@@ -4,7 +4,7 @@ import Coins from "./svgComponents/Coins";
 
 const Features = () => {
   return (
-    <section className="py-20 px-4 md:px-0" id="features">
+    <section className="py-20 px-4 md:px-0" id="/features">
       <div className="text-center text-white space-y-5 mb-5 ">
         <h1 className="text-3xl sm:text-3xl lg:text-5xl  font-bold text-white  lg:mb-6 leading-tight px-4">
           Your Money, Your Cards,Total freedom
@@ -66,7 +66,7 @@ const Features = () => {
           </div>
         </div>
       </div>
-    </section>
+    </section>  
   );
 };
 

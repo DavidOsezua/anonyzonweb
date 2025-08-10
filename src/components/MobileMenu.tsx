@@ -1,5 +1,6 @@
 import Logo from "./svgComponents/Logo";
 import Close from "./svgComponents/Close";
+import { NavLink } from "react-router";
 
 const MobileMenu: React.FC<{
   isOpen: boolean;
@@ -33,7 +34,7 @@ const MobileMenu: React.FC<{
         <div className="flex-1 space-y-8 text-center">
           <button
             onClick={() => {
-              scroll("features");
+              scroll("/features");
               onClose();
             }}
             className="block w-full text-white text-xl py-8 border-b border-[#ffffff67] transition-colors hover:text-blue-400"
@@ -42,19 +43,19 @@ const MobileMenu: React.FC<{
           </button>
           <button
             onClick={() => {
-              scroll("download");
+              scroll("/download");
               onClose();
             }}
             className="block w-full text-white text-xl py-8 border-b border-[#ffffff67] transition-colors hover:text-blue-400"
           >
             Download App
           </button>
-          <a
-            href="#policy"
+          <NavLink
+            to="/policy"
             className="block text-white text-xl py-4 transition-colors hover:text-blue-400"
           >
             Policy
-          </a>
+          </NavLink>
         </div>
 
         {/* CTA Button */}

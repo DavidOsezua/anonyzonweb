@@ -9,7 +9,7 @@ const DownloadSection: React.FC = () => {
   ];
 
   return (
-    <section className="" id="download">
+    <section className="" id="/download">
       <div className="max-w-7xl px-4 mdpx-0 w-full mx-auto text-center">
         {/* Heading */}
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
