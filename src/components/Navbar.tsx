@@ -11,7 +11,7 @@ const Navbar: React.FC = () => {
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  const [sectionId, setSectionId] = useState("");
+  const [sectionId] = useState("");
 
   useEffect(() => {
     if (pendingScroll && location.pathname === "/") {
