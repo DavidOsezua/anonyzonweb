@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
 
           <div className="flex gap-4 text-center text-[12px] sm:text-left">
             <NavLink
-              to="/privacy"
+              to="/policy"
               className="text-gray-400 border-r border-[#FFFFFF] pr-6 hover:text-white transition-colors"
             >
               Privacy Policy
