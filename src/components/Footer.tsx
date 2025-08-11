@@ -23,12 +23,6 @@ const Footer: React.FC = () => {
             >
               Terms of Service
             </NavLink>
-            <a
-              href="#support"
-              className="text-gray-400 hover:text-white transition-colors"
-            >
-              Support
-            </a>
           </div>
         </div>
       </div>
