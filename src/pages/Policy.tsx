@@ -93,6 +93,43 @@ const Policy = () => {
             </ul>
           </div>
 
+          {/* Account Deletion and Data Removal */}
+          <div className="mb-12 space-y-2">
+            <h1 className="text-3xl md:text-3xl font-bold">
+              Account Deletion and Data Removal
+            </h1>
+            <p className="text-white leading-6 text-[14px]">
+        When you request to delete your Anonyzon account, please note the following conditions:
+
+            </p>
+            <ul className="space-y-3 text-white leading-6 text-[14px] pl-6 pt-2">
+              <li className="flex items-start">
+                <span className="inline-block w-2 h-2 bg-white rounded-full mt-2 mr-4 flex-shrink-0"></span>
+              If you have funds remaining in your account balance, you are required to withdraw them before proceeding with deletion.
+
+              </li>
+              <li className="flex items-start">
+                <span className="inline-block w-2 h-2 bg-white rounded-full mt-2 mr-4 flex-shrink-0"></span>
+                If you choose to continue without withdrawing your funds, any remaining balance will be permanently forfeited.
+
+              </li>
+              <li className="flex items-start">
+                <span className="inline-block w-2 h-2 bg-white rounded-full mt-2 mr-4 flex-shrink-0"></span>
+                By confirming account deletion, you authorize Anonyzon to remove your personal details and delete any linked or foreign accounts associated with your profile.
+
+              </li>
+              <li className="flex items-start">
+                <span className="inline-block w-2 h-2 bg-white rounded-full mt-2 mr-4 flex-shrink-0"></span>
+                All personal data will be permanently deleted from our records within 30 days of your deletion request.
+
+              </li>
+              <li className="flex items-start">
+                <span className="inline-block w-2 h-2 bg-white rounded-full mt-2 mr-4 flex-shrink-0"></span>
+                To finalize the deletion, you must confirm your decision and agree to our Terms of Service.
+              </li>
+            </ul>
+          </div>
+
           {/* How We Protect Your Information Section */}
           <div className="mb-12 space-y-2">
             <h1 className="text-3xl md:text-3xl font-bold">
